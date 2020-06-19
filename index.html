@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="description" content="Reaction Time Challenge">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Ajay">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Reaction Time Challenge</title>
+</head>
+<body>
+	<div id="logo-header">
+		<img src="images/rio.svg" alt="rio olympics 2016">
+	</div>
+	<nav id="navbar">
+		<h1>Reaction Time Challenge</h1>
+		<img id="rings-nav-logo" src="images/rings.png" alt="olympic-rings">
+	</nav>
+	<header id="header">
+		<div id="header-banner-img">
+			<img id="bolt" src="images/banner-transparent-2.png" alt="usain bolt rio olympics">
+			<img id="speed" src="images/speed.png" alt="speed-trails">
+		</div>
+	</header>
+	<main id="main">
+		<section id="challenge-info">
+			<h1 id="challenge-heading">Can You Beat Usain Bolt's Reaction Time?</h1>
+			<p id="challenge-description">
+				Usain Bolt's reaction time out of the starting blocks in the 100-meter final in Rio was <strong>0.155 of a second</strong>. Try  to beat it.
+			</p>
+			<h4 id="challenge-instruction">Turn Up Your Volume <i class="fa fa-volume-up" aria-hidden="true"></i></h4>
+		</section>
+		<section id="challenge">
+			<audio id="onYourMarks">
+				<source src="audio/onYourMarks.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="getSet">
+				<source src="audio/getSet.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="go">
+				<source src="audio/go.mp3" type="audio/mpeg">
+			</audio>
+			<div id="challenge-timer">
+				<button id="challenge-btn">I'm ready</button>
+				<fieldset>
+				  <legend>Response Time</legend>
+				  <span id="s_minutes">00</span><i>:</i>
+				  <span id="s_seconds">00</span><i>:</i>
+				  <span id="s_ms">000</span>
+				</fieldset>
+			</div>
+			<div id="challenge-osb">
+				<button disabled="true" id="o">ON YOUR MARK</button>
+				<button disabled="true" id="s">SET</button>
+				<button disabled="true" id="b">BANG</button>
+			</div>
+		</section>
+		<section id="challenge-verdict">
+			<p id="verdict"></p>
+		</section>
+	</main>
+	<footer id="footer">
+		<p>ajaypanthagani &copy; 2020 | inspired from: nytimes.com</p>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+</html>
